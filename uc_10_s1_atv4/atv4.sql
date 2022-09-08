@@ -1,0 +1,5 @@
+CREATE ROLE novoPerfil;
+
+CREATE USER luis IDENTIFIED BY 'senha' DEFAULT ROLE novoPerfil;
+
+GRANT SELECT ON atv2.* TO luis;
